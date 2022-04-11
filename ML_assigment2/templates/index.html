@@ -1,0 +1,35 @@
+
+
+
+{% block head %}
+
+<title>Predict Extra Marital Affair</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+    <br>
+    <h1 style="text-align: center"> Logistic Regression to Predict Extra Marital Affair </h1>
+    </br>
+    <div class="gallery">
+    <img src="{{url_for('static',filename ='img.jpg')}}" height="800" width="800">
+
+    <div class="form">
+        <form action="/affair" method="POST">
+
+<!--            <h3>Enter prd[] value using prd = model.predict(x_test) it will compare</h3>-->
+
+        <input type="text" name="num1" id="num1">
+
+
+
+            <br>
+            <input type="submit" value="predicted & actual">
+            </br>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}
